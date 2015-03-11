@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SearchLyricsViewController.h
 //  LyricLife
 //
 //  Created by Jessie Serrino on 3/11/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SearchViewController : UIViewController
-
+@interface SearchLyricsViewController : UIViewController 
 
 @end
-

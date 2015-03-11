@@ -9,11 +9,21 @@
 /* Begin PBXBuildFile section */
 		91A7295D1AB093AF0031D3F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A7295C1AB093AF0031D3F0 /* main.m */; };
 		91A729601AB093AF0031D3F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A7295F1AB093AF0031D3F0 /* AppDelegate.m */; };
-		91A729631AB093AF0031D3F0 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729621AB093AF0031D3F0 /* SearchViewController.m */; };
 		91A729661AB093AF0031D3F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A729641AB093AF0031D3F0 /* Main.storyboard */; };
 		91A729681AB093AF0031D3F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91A729671AB093AF0031D3F0 /* Images.xcassets */; };
 		91A7296B1AB093AF0031D3F0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91A729691AB093AF0031D3F0 /* LaunchScreen.xib */; };
 		91A729771AB093AF0031D3F0 /* LyricLifeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729761AB093AF0031D3F0 /* LyricLifeTests.m */; };
+		91A729821AB097B70031D3F0 /* SearchLyricsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729811AB097B70031D3F0 /* SearchLyricsViewController.m */; };
+		91A729891AB09A5F0031D3F0 /* Lyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729881AB09A5F0031D3F0 /* Lyrics.m */; };
+		91A7298D1AB09B7D0031D3F0 /* LyricsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A7298C1AB09B7D0031D3F0 /* LyricsTests.m */; };
+		91A729911AB0A0F10031D3F0 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729901AB0A0F10031D3F0 /* Track.m */; };
+		91A729931AB0A18A0031D3F0 /* TrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729921AB0A18A0031D3F0 /* TrackTests.m */; };
+		91A729971AB0A6610031D3F0 /* TrackSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729961AB0A6610031D3F0 /* TrackSearchRequest.m */; };
+		91A7299A1AB0A6710031D3F0 /* LyricsSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729991AB0A6710031D3F0 /* LyricsSearchRequest.m */; };
+		91A729A01AB0AE000031D3F0 /* RequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A7299F1AB0AE000031D3F0 /* RequestMaker.m */; };
+		91A729A31AB0B3C50031D3F0 /* URLFriendlyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729A21AB0B3C50031D3F0 /* URLFriendlyString.m */; };
+		91A729A71AB0B57B0031D3F0 /* TrackParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729A61AB0B57B0031D3F0 /* TrackParser.m */; };
+		91A729AA1AB0B58B0031D3F0 /* LyricsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729A91AB0B58B0031D3F0 /* LyricsParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +42,32 @@
 		91A7295C1AB093AF0031D3F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		91A7295E1AB093AF0031D3F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		91A7295F1AB093AF0031D3F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		91A729611AB093AF0031D3F0 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
-		91A729621AB093AF0031D3F0 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		91A729651AB093AF0031D3F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91A729671AB093AF0031D3F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		91A7296A1AB093AF0031D3F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		91A729701AB093AF0031D3F0 /* LyricLifeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LyricLifeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A729751AB093AF0031D3F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91A729761AB093AF0031D3F0 /* LyricLifeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LyricLifeTests.m; sourceTree = "<group>"; };
+		91A729801AB097B70031D3F0 /* SearchLyricsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchLyricsViewController.h; sourceTree = "<group>"; };
+		91A729811AB097B70031D3F0 /* SearchLyricsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchLyricsViewController.m; sourceTree = "<group>"; };
+		91A729871AB09A5F0031D3F0 /* Lyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lyrics.h; sourceTree = "<group>"; };
+		91A729881AB09A5F0031D3F0 /* Lyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lyrics.m; sourceTree = "<group>"; };
+		91A7298C1AB09B7D0031D3F0 /* LyricsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsTests.m; sourceTree = "<group>"; };
+		91A7298F1AB0A0F10031D3F0 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		91A729901AB0A0F10031D3F0 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
+		91A729921AB0A18A0031D3F0 /* TrackTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackTests.m; sourceTree = "<group>"; };
+		91A729951AB0A6610031D3F0 /* TrackSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackSearchRequest.h; sourceTree = "<group>"; };
+		91A729961AB0A6610031D3F0 /* TrackSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackSearchRequest.m; sourceTree = "<group>"; };
+		91A729981AB0A6710031D3F0 /* LyricsSearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsSearchRequest.h; sourceTree = "<group>"; };
+		91A729991AB0A6710031D3F0 /* LyricsSearchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsSearchRequest.m; sourceTree = "<group>"; };
+		91A7299E1AB0AE000031D3F0 /* RequestMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestMaker.h; sourceTree = "<group>"; };
+		91A7299F1AB0AE000031D3F0 /* RequestMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestMaker.m; sourceTree = "<group>"; };
+		91A729A11AB0B3C50031D3F0 /* URLFriendlyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLFriendlyString.h; sourceTree = "<group>"; };
+		91A729A21AB0B3C50031D3F0 /* URLFriendlyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLFriendlyString.m; sourceTree = "<group>"; };
+		91A729A51AB0B57B0031D3F0 /* TrackParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackParser.h; sourceTree = "<group>"; };
+		91A729A61AB0B57B0031D3F0 /* TrackParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackParser.m; sourceTree = "<group>"; };
+		91A729A81AB0B58B0031D3F0 /* LyricsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsParser.h; sourceTree = "<group>"; };
+		91A729A91AB0B58B0031D3F0 /* LyricsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +109,17 @@
 		91A729591AB093AF0031D3F0 /* LyricLife */ = {
 			isa = PBXGroup;
 			children = (
+				91A729A41AB0B5300031D3F0 /* Data Parser */,
+				91A729941AB0A6290031D3F0 /* Request */,
+				91A729841AB099140031D3F0 /* View */,
 				91A7295E1AB093AF0031D3F0 /* AppDelegate.h */,
 				91A7295F1AB093AF0031D3F0 /* AppDelegate.m */,
-				91A729611AB093AF0031D3F0 /* SearchViewController.h */,
-				91A729621AB093AF0031D3F0 /* SearchViewController.m */,
 				91A729641AB093AF0031D3F0 /* Main.storyboard */,
 				91A729671AB093AF0031D3F0 /* Images.xcassets */,
 				91A729691AB093AF0031D3F0 /* LaunchScreen.xib */,
 				91A7295A1AB093AF0031D3F0 /* Supporting Files */,
+				91A729831AB098B40031D3F0 /* Interactor */,
+				91A7298E1AB09FE30031D3F0 /* Entities */,
 			);
 			path = LyricLife;
 			sourceTree = "<group>";
@@ -107,6 +138,8 @@
 			children = (
 				91A729761AB093AF0031D3F0 /* LyricLifeTests.m */,
 				91A729741AB093AF0031D3F0 /* Supporting Files */,
+				91A7298C1AB09B7D0031D3F0 /* LyricsTests.m */,
+				91A729921AB0A18A0031D3F0 /* TrackTests.m */,
 			);
 			path = LyricLifeTests;
 			sourceTree = "<group>";
@@ -117,6 +150,60 @@
 				91A729751AB093AF0031D3F0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		91A729831AB098B40031D3F0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		91A729841AB099140031D3F0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91A729801AB097B70031D3F0 /* SearchLyricsViewController.h */,
+				91A729811AB097B70031D3F0 /* SearchLyricsViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		91A7298E1AB09FE30031D3F0 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				91A729871AB09A5F0031D3F0 /* Lyrics.h */,
+				91A729881AB09A5F0031D3F0 /* Lyrics.m */,
+				91A7298F1AB0A0F10031D3F0 /* Track.h */,
+				91A729901AB0A0F10031D3F0 /* Track.m */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		91A729941AB0A6290031D3F0 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				91A729951AB0A6610031D3F0 /* TrackSearchRequest.h */,
+				91A729961AB0A6610031D3F0 /* TrackSearchRequest.m */,
+				91A729981AB0A6710031D3F0 /* LyricsSearchRequest.h */,
+				91A729991AB0A6710031D3F0 /* LyricsSearchRequest.m */,
+				91A7299E1AB0AE000031D3F0 /* RequestMaker.h */,
+				91A7299F1AB0AE000031D3F0 /* RequestMaker.m */,
+				91A729A11AB0B3C50031D3F0 /* URLFriendlyString.h */,
+				91A729A21AB0B3C50031D3F0 /* URLFriendlyString.m */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		91A729A41AB0B5300031D3F0 /* Data Parser */ = {
+			isa = PBXGroup;
+			children = (
+				91A729A51AB0B57B0031D3F0 /* TrackParser.h */,
+				91A729A61AB0B57B0031D3F0 /* TrackParser.m */,
+				91A729A81AB0B58B0031D3F0 /* LyricsParser.h */,
+				91A729A91AB0B58B0031D3F0 /* LyricsParser.m */,
+			);
+			name = "Data Parser";
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91A729631AB093AF0031D3F0 /* SearchViewController.m in Sources */,
+				91A7299A1AB0A6710031D3F0 /* LyricsSearchRequest.m in Sources */,
+				91A729891AB09A5F0031D3F0 /* Lyrics.m in Sources */,
+				91A729A71AB0B57B0031D3F0 /* TrackParser.m in Sources */,
+				91A729A31AB0B3C50031D3F0 /* URLFriendlyString.m in Sources */,
+				91A729A01AB0AE000031D3F0 /* RequestMaker.m in Sources */,
 				91A729601AB093AF0031D3F0 /* AppDelegate.m in Sources */,
+				91A729911AB0A0F10031D3F0 /* Track.m in Sources */,
+				91A729971AB0A6610031D3F0 /* TrackSearchRequest.m in Sources */,
+				91A729821AB097B70031D3F0 /* SearchLyricsViewController.m in Sources */,
+				91A729AA1AB0B58B0031D3F0 /* LyricsParser.m in Sources */,
 				91A7295D1AB093AF0031D3F0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,7 +324,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A7298D1AB09B7D0031D3F0 /* LyricsTests.m in Sources */,
 				91A729771AB093AF0031D3F0 /* LyricLifeTests.m in Sources */,
+				91A729931AB0A18A0031D3F0 /* TrackTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +441,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LyricLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LyricLife/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

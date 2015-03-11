@@ -4,36 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--Search View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" customClass="SearchViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="diD-Gv-M5n">
-                                <rect key="frame" x="0.0" y="74" width="600" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="diD-Gv-M5n" secondAttribute="width" id="CfI-th-wlX"/>
-                            <constraint firstAttribute="centerX" secondItem="diD-Gv-M5n" secondAttribute="centerX" id="E2U-Pm-Gkn"/>
-                            <constraint firstItem="diD-Gv-M5n" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="zIv-k6-bL7"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="LeR-Tc-nyq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1152" y="357"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="G5E-CJ-fcw">
             <objects>
@@ -45,12 +15,45 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="OTV-AW-mNt"/>
+                        <segue destination="s9S-k5-Bgb" kind="relationship" relationship="rootViewController" id="YRS-qg-OQl"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vdb-2c-k4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="340" y="-336"/>
+        </scene>
+        <!--Search Lyrics View Controller-->
+        <scene sceneID="8J6-Af-Sj8">
+            <objects>
+                <viewController id="s9S-k5-Bgb" customClass="SearchLyricsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ARc-Rc-dCn"/>
+                        <viewControllerLayoutGuide type="bottom" id="otx-s1-jmo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F1C-5w-1UE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="0az-on-O5P">
+                                <rect key="frame" x="0.0" y="74" width="600" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="0az-on-O5P" secondAttribute="centerX" id="WzZ-W3-l47"/>
+                            <constraint firstItem="0az-on-O5P" firstAttribute="top" secondItem="ARc-Rc-dCn" secondAttribute="bottom" constant="10" id="iZL-pX-v9N"/>
+                            <constraint firstItem="0az-on-O5P" firstAttribute="width" secondItem="F1C-5w-1UE" secondAttribute="width" id="wlW-O4-idD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="G38-yw-mF6"/>
+                    <connections>
+                        <outlet property="searchBar" destination="0az-on-O5P" id="8j6-Jq-kgw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t79-Qd-GLC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="-331"/>
         </scene>
     </scenes>
 </document>
