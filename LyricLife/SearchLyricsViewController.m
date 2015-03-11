@@ -7,6 +7,7 @@
 //
 
 #import "SearchLyricsViewController.h"
+#import "LyricsViewController.h"
 #import "LyricsSearchRequest.h"
 #import "TrackSearchRequest.h"
 #import "LyricsParser.h"
@@ -14,11 +15,12 @@
 #import "TrackParser.h"
 #import "Track.h"
 
+static NSString * const kDetailSegueIdentifier = @"detailViewSegue";
 
 @interface SearchLyricsViewController () <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) NSArray *tracks;
-@property (strong, nonatomic) Lyrics *lyrics;
+@property (strong, nonatomic) Track *selectedTrack;
 @property (strong, nonatomic) IBOutlet UITableView *trackListTableView;
 
 @end
@@ -85,8 +87,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSInteger index = [indexPath item];
+    self.selectedTrack = self.tracks[index];
+    
+    [self performSegueWithIdentifier:kDetailSegueIdentifier sender:self];
 }
 
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    LyricsViewController *lyricsView =  [segue destinationViewController];
+    lyricsView.trackInformation = self.selectedTrack;
+    NSInteger trackID = self.selectedTrack.trackID;
+    
+    [LyricsSearchRequest lyricsSearchRequest:trackID withCompletionBlock:^(NSData *returnData){
+        lyricsView.trackInformation.lyrics = [LyricsParser lyricsWithLyricsData: returnData];
+        [lyricsView prepareLyrics];
+    }];
+}
 
 @end

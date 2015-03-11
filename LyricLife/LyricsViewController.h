@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Lyrics.h"
+#import "Track.h"
 
 @interface LyricsViewController : UIViewController
+
+@property (nonatomic, strong) Track *trackInformation;
+
+- (void) prepareLyrics;
 
 @end
