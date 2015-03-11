@@ -36,6 +36,7 @@
     if(self.lyricsAreOver)
         return @"";
     NSString *lyric = self.lyrics.lines[self.lyricIndex];
+    NSLog(lyric);
     _lyricIndex++;
     return lyric;
 }

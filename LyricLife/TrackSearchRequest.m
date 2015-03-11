@@ -12,7 +12,7 @@
 
 static NSString * const kTrackQuery =@"track.search";
 static NSString * const kRequestAdd = @"&q=";
-static NSString * const kWithLyricsFilter = @"&f_has_lyrics=1";
+static NSString * const kWithLyricsFilter = @"&f_has_lyrics=1&s_track_rating=desc&s_artist_rating=desc";
 
 
 @implementation TrackSearchRequest

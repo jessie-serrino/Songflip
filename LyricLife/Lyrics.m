@@ -7,6 +7,7 @@
 //
 
 #import "Lyrics.h"
+#import "LyricsFilter.h"
 
 @interface Lyrics()
 
@@ -18,7 +19,7 @@
 - (instancetype) initWithString: (NSString *) lyrics
 {
     self = [super init];
-    _lines = [lyrics componentsSeparatedByString:@"\n"];
+    _lines = [LyricsFilter filteredArrayFromString:lyrics];
     return self;
 }
 

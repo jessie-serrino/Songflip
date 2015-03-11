@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9125499F1AB0FF60004C0167 /* LyricsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125499E1AB0FF60004C0167 /* LyricsFilter.m */; };
+		912549A31AB10734004C0167 /* DeviceHardwareHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 912549A21AB10734004C0167 /* DeviceHardwareHelper.m */; };
 		91A7295D1AB093AF0031D3F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A7295C1AB093AF0031D3F0 /* main.m */; };
 		91A729601AB093AF0031D3F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A7295F1AB093AF0031D3F0 /* AppDelegate.m */; };
 		91A729661AB093AF0031D3F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A729641AB093AF0031D3F0 /* Main.storyboard */; };
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9125499D1AB0FF60004C0167 /* LyricsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsFilter.h; sourceTree = "<group>"; };
+		9125499E1AB0FF60004C0167 /* LyricsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsFilter.m; sourceTree = "<group>"; };
+		912549A11AB10734004C0167 /* DeviceHardwareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceHardwareHelper.h; sourceTree = "<group>"; };
+		912549A21AB10734004C0167 /* DeviceHardwareHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceHardwareHelper.m; sourceTree = "<group>"; };
 		91A729571AB093AF0031D3F0 /* LyricLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyricLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91A7295B1AB093AF0031D3F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		91A7295C1AB093AF0031D3F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		912549A01AB1071A004C0167 /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				912549A11AB10734004C0167 /* DeviceHardwareHelper.h */,
+				912549A21AB10734004C0167 /* DeviceHardwareHelper.m */,
+			);
+			name = Gestures;
+			sourceTree = "<group>";
+		};
 		91A7294E1AB093AF0031D3F0 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +130,7 @@
 		91A729591AB093AF0031D3F0 /* LyricLife */ = {
 			isa = PBXGroup;
 			children = (
+				912549A01AB1071A004C0167 /* Gestures */,
 				91A729AE1AB0CAD10031D3F0 /* Stepper */,
 				91A7298E1AB09FE30031D3F0 /* Entities */,
 				91A729A41AB0B5300031D3F0 /* Data Parser */,
@@ -210,6 +226,8 @@
 				91A729A61AB0B57B0031D3F0 /* TrackParser.m */,
 				91A729A81AB0B58B0031D3F0 /* LyricsParser.h */,
 				91A729A91AB0B58B0031D3F0 /* LyricsParser.m */,
+				9125499D1AB0FF60004C0167 /* LyricsFilter.h */,
+				9125499E1AB0FF60004C0167 /* LyricsFilter.m */,
 			);
 			name = "Data Parser";
 			path = ..;
@@ -331,8 +349,10 @@
 				91A729A31AB0B3C50031D3F0 /* URLFriendlyString.m in Sources */,
 				91A729A01AB0AE000031D3F0 /* RequestMaker.m in Sources */,
 				91A729601AB093AF0031D3F0 /* AppDelegate.m in Sources */,
+				9125499F1AB0FF60004C0167 /* LyricsFilter.m in Sources */,
 				91A729911AB0A0F10031D3F0 /* Track.m in Sources */,
 				91A729971AB0A6610031D3F0 /* TrackSearchRequest.m in Sources */,
+				912549A31AB10734004C0167 /* DeviceHardwareHelper.m in Sources */,
 				91A729821AB097B70031D3F0 /* SearchLyricsViewController.m in Sources */,
 				91A729AA1AB0B58B0031D3F0 /* LyricsParser.m in Sources */,
 				91A729AD1AB0C3750031D3F0 /* LyricsViewController.m in Sources */,
@@ -531,6 +551,7 @@
 				91A7297C1AB093AF0031D3F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		91A7297D1AB093AF0031D3F0 /* Build configuration list for PBXNativeTarget "LyricLifeTests" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +560,7 @@
 				91A7297F1AB093AF0031D3F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -77,6 +77,12 @@ static NSString * const kDetailSegueIdentifier = @"detailViewSegue";
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:NSStringFromClass([UITableViewCell class]) forIndexPath:indexPath];
+
+    NSString *BasicCellIdentifier=NSStringFromClass([UITableViewCell class]);
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:BasicCellIdentifier];
+    }
+
     NSInteger index = [indexPath item];
     Track *track = self.tracks[index];
     cell.textLabel.text = track.songTitle;
