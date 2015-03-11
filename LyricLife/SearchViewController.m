@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Jessie Serrino. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SearchViewController.h"
 
-@interface ViewController ()
+@interface SearchViewController ()
 
 @end
 
-@implementation ViewController
+@implementation SearchViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
