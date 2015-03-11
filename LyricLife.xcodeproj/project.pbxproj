@@ -24,6 +24,7 @@
 		91A729A31AB0B3C50031D3F0 /* URLFriendlyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729A21AB0B3C50031D3F0 /* URLFriendlyString.m */; };
 		91A729A71AB0B57B0031D3F0 /* TrackParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729A61AB0B57B0031D3F0 /* TrackParser.m */; };
 		91A729AA1AB0B58B0031D3F0 /* LyricsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729A91AB0B58B0031D3F0 /* LyricsParser.m */; };
+		91A729AD1AB0C3750031D3F0 /* LyricsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729AC1AB0C3750031D3F0 /* LyricsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		91A729A61AB0B57B0031D3F0 /* TrackParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackParser.m; sourceTree = "<group>"; };
 		91A729A81AB0B58B0031D3F0 /* LyricsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsParser.h; sourceTree = "<group>"; };
 		91A729A91AB0B58B0031D3F0 /* LyricsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsParser.m; sourceTree = "<group>"; };
+		91A729AB1AB0C3750031D3F0 /* LyricsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsViewController.h; sourceTree = "<group>"; };
+		91A729AC1AB0C3750031D3F0 /* LyricsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,17 +112,16 @@
 		91A729591AB093AF0031D3F0 /* LyricLife */ = {
 			isa = PBXGroup;
 			children = (
+				91A7298E1AB09FE30031D3F0 /* Entities */,
 				91A729A41AB0B5300031D3F0 /* Data Parser */,
 				91A729941AB0A6290031D3F0 /* Request */,
 				91A729841AB099140031D3F0 /* View */,
 				91A7295E1AB093AF0031D3F0 /* AppDelegate.h */,
 				91A7295F1AB093AF0031D3F0 /* AppDelegate.m */,
-				91A729641AB093AF0031D3F0 /* Main.storyboard */,
 				91A729671AB093AF0031D3F0 /* Images.xcassets */,
 				91A729691AB093AF0031D3F0 /* LaunchScreen.xib */,
 				91A7295A1AB093AF0031D3F0 /* Supporting Files */,
 				91A729831AB098B40031D3F0 /* Interactor */,
-				91A7298E1AB09FE30031D3F0 /* Entities */,
 			);
 			path = LyricLife;
 			sourceTree = "<group>";
@@ -162,8 +164,11 @@
 		91A729841AB099140031D3F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				91A729641AB093AF0031D3F0 /* Main.storyboard */,
 				91A729801AB097B70031D3F0 /* SearchLyricsViewController.h */,
 				91A729811AB097B70031D3F0 /* SearchLyricsViewController.m */,
+				91A729AB1AB0C3750031D3F0 /* LyricsViewController.h */,
+				91A729AC1AB0C3750031D3F0 /* LyricsViewController.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				91A729971AB0A6610031D3F0 /* TrackSearchRequest.m in Sources */,
 				91A729821AB097B70031D3F0 /* SearchLyricsViewController.m in Sources */,
 				91A729AA1AB0B58B0031D3F0 /* LyricsParser.m in Sources */,
+				91A729AD1AB0C3750031D3F0 /* LyricsViewController.m in Sources */,
 				91A7295D1AB093AF0031D3F0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

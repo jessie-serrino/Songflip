@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7ML-mg-auS">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -16,6 +17,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="s9S-k5-Bgb" kind="relationship" relationship="rootViewController" id="YRS-qg-OQl"/>
+                        <segue destination="JeY-oW-rf5" kind="presentation" id="PE4-8G-XH8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vdb-2c-k4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -38,9 +40,17 @@
                                 <rect key="frame" x="0.0" y="74" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="jnL-W6-pU7">
+                                <rect key="frame" x="16" y="118" width="568" height="482"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="jnL-W6-pU7" secondAttribute="trailing" id="0iC-DU-63O"/>
+                            <constraint firstItem="jnL-W6-pU7" firstAttribute="leading" secondItem="F1C-5w-1UE" secondAttribute="leadingMargin" id="Dtl-pi-b4F"/>
+                            <constraint firstItem="jnL-W6-pU7" firstAttribute="top" secondItem="0az-on-O5P" secondAttribute="bottom" id="EmV-Pp-0zB"/>
+                            <constraint firstItem="otx-s1-jmo" firstAttribute="top" secondItem="jnL-W6-pU7" secondAttribute="bottom" id="NRj-s4-ZtI"/>
                             <constraint firstAttribute="centerX" secondItem="0az-on-O5P" secondAttribute="centerX" id="WzZ-W3-l47"/>
                             <constraint firstItem="0az-on-O5P" firstAttribute="top" secondItem="ARc-Rc-dCn" secondAttribute="bottom" constant="10" id="iZL-pX-v9N"/>
                             <constraint firstItem="0az-on-O5P" firstAttribute="width" secondItem="F1C-5w-1UE" secondAttribute="width" id="wlW-O4-idD"/>
@@ -49,11 +59,30 @@
                     <navigationItem key="navigationItem" id="G38-yw-mF6"/>
                     <connections>
                         <outlet property="searchBar" destination="0az-on-O5P" id="8j6-Jq-kgw"/>
+                        <outlet property="trackListTableView" destination="jnL-W6-pU7" id="9Jo-f3-gCo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t79-Qd-GLC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1045" y="-331"/>
+            <point key="canvasLocation" x="997" y="-323"/>
+        </scene>
+        <!--Lyrics View Controller-->
+        <scene sceneID="D0E-Rs-nXE">
+            <objects>
+                <viewController id="JeY-oW-rf5" customClass="LyricsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S5Z-ry-AFl"/>
+                        <viewControllerLayoutGuide type="bottom" id="gPB-4i-Nq5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vqp-1A-Ahf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EsF-6Q-P3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997" y="386"/>
         </scene>
     </scenes>
 </document>
