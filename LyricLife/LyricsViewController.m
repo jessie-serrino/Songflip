@@ -8,6 +8,7 @@
 
 #import "LyricsViewController.h"
 #import "LyricsStepper.h"
+#import "DeviceHardwareHelper.h"
 @import AudioToolbox;
 
 
@@ -17,6 +18,7 @@ static NSString * const kLyricPath = @"currentLyric";
 @property (nonatomic, strong) LyricsStepper *stepper;
 @property (nonatomic, strong) NSString  *currentLyric;
 @property (strong, nonatomic) IBOutlet UILabel *lyricLabel;
+@property (strong, nonatomic)  DeviceHardwareHelper *deviceHardwareHelper;
 
 @end
 
@@ -31,6 +33,18 @@ static NSString * const kLyricPath = @"currentLyric";
         
     }
 }
+
+- (void) viewDidLoad
+{
+    self.deviceHardwareHelper = [[DeviceHardwareHelper alloc] init];
+    [self.deviceHardwareHelper onProximityEventApproachDoThis:^{
+        [self stepLyric];
+    }];
+    
+    [[UIDevice currentDevice] setProximityMonitoringEnabled:YES];
+}
+
+
 
 - (void)viewWillAppear:(BOOL)animated
 {

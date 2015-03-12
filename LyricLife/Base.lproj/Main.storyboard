@@ -35,7 +35,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="0az-on-O5P">
+                            <searchBar contentMode="redraw" placeholder="Song, Artist, or Lyrics" translatesAutoresizingMaskIntoConstraints="NO" id="0az-on-O5P">
                                 <rect key="frame" x="0.0" y="74" width="600" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>

@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DeviceHardwareHelper : NSObject
+typedef void (^SimpleBlock)();
 
+
+@interface DeviceHardwareHelper : NSObject
+- (void) onProximityEventApproachDoThis: (SimpleBlock) action;
+
+- (void) onProximityEventLeavingDoThis: (SimpleBlock) action;
 @end

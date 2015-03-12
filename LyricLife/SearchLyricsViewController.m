@@ -49,11 +49,16 @@ static NSString * const kDetailSegueIdentifier = @"detailViewSegue";
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
 {
-    
+    self.tracks = nil;
+    [self.trackListTableView reloadData];
+    [self.trackListTableView setHidden:YES];
     // Weakify soon
     [TrackSearchRequest trackSearchRequest:searchBar.text withCompletionBlock:^(NSData *returnData){
         self.tracks = [TrackParser tracksWithTracksData:returnData];
+
         [self.trackListTableView reloadData];
+        [self.trackListTableView setHidden:NO];
+
     }];
 }
 
