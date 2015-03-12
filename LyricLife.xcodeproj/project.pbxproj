@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9125499F1AB0FF60004C0167 /* LyricsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9125499E1AB0FF60004C0167 /* LyricsFilter.m */; };
+		91013EAA1AB1105900BAE049 /* LyricsFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 91013EA71AB1105900BAE049 /* LyricsFilter.m */; };
+		91013EAB1AB1105900BAE049 /* LyricsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 91013EA91AB1105900BAE049 /* LyricsParser.m */; };
+		91013EAE1AB1106600BAE049 /* TrackParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 91013EAD1AB1106600BAE049 /* TrackParser.m */; };
 		912549A31AB10734004C0167 /* DeviceHardwareHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 912549A21AB10734004C0167 /* DeviceHardwareHelper.m */; };
 		91A7295D1AB093AF0031D3F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A7295C1AB093AF0031D3F0 /* main.m */; };
 		91A729601AB093AF0031D3F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A7295F1AB093AF0031D3F0 /* AppDelegate.m */; };
@@ -24,8 +26,6 @@
 		91A7299A1AB0A6710031D3F0 /* LyricsSearchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729991AB0A6710031D3F0 /* LyricsSearchRequest.m */; };
 		91A729A01AB0AE000031D3F0 /* RequestMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A7299F1AB0AE000031D3F0 /* RequestMaker.m */; };
 		91A729A31AB0B3C50031D3F0 /* URLFriendlyString.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729A21AB0B3C50031D3F0 /* URLFriendlyString.m */; };
-		91A729A71AB0B57B0031D3F0 /* TrackParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729A61AB0B57B0031D3F0 /* TrackParser.m */; };
-		91A729AA1AB0B58B0031D3F0 /* LyricsParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729A91AB0B58B0031D3F0 /* LyricsParser.m */; };
 		91A729AD1AB0C3750031D3F0 /* LyricsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729AC1AB0C3750031D3F0 /* LyricsViewController.m */; };
 		91A729B11AB0CAEC0031D3F0 /* LyricsStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A729B01AB0CAEC0031D3F0 /* LyricsStepper.m */; };
 /* End PBXBuildFile section */
@@ -41,8 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9125499D1AB0FF60004C0167 /* LyricsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsFilter.h; sourceTree = "<group>"; };
-		9125499E1AB0FF60004C0167 /* LyricsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsFilter.m; sourceTree = "<group>"; };
+		91013EA61AB1105900BAE049 /* LyricsFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsFilter.h; path = LyricLife/LyricsFilter.h; sourceTree = "<group>"; };
+		91013EA71AB1105900BAE049 /* LyricsFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LyricsFilter.m; path = LyricLife/LyricsFilter.m; sourceTree = "<group>"; };
+		91013EA81AB1105900BAE049 /* LyricsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LyricsParser.h; path = LyricLife/LyricsParser.h; sourceTree = "<group>"; };
+		91013EA91AB1105900BAE049 /* LyricsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LyricsParser.m; path = LyricLife/LyricsParser.m; sourceTree = "<group>"; };
+		91013EAC1AB1106600BAE049 /* TrackParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TrackParser.h; path = LyricLife/TrackParser.h; sourceTree = "<group>"; };
+		91013EAD1AB1106600BAE049 /* TrackParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TrackParser.m; path = LyricLife/TrackParser.m; sourceTree = "<group>"; };
 		912549A11AB10734004C0167 /* DeviceHardwareHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceHardwareHelper.h; sourceTree = "<group>"; };
 		912549A21AB10734004C0167 /* DeviceHardwareHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceHardwareHelper.m; sourceTree = "<group>"; };
 		91A729571AB093AF0031D3F0 /* LyricLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LyricLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,10 +76,6 @@
 		91A7299F1AB0AE000031D3F0 /* RequestMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestMaker.m; sourceTree = "<group>"; };
 		91A729A11AB0B3C50031D3F0 /* URLFriendlyString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLFriendlyString.h; sourceTree = "<group>"; };
 		91A729A21AB0B3C50031D3F0 /* URLFriendlyString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLFriendlyString.m; sourceTree = "<group>"; };
-		91A729A51AB0B57B0031D3F0 /* TrackParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackParser.h; sourceTree = "<group>"; };
-		91A729A61AB0B57B0031D3F0 /* TrackParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackParser.m; sourceTree = "<group>"; };
-		91A729A81AB0B58B0031D3F0 /* LyricsParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsParser.h; sourceTree = "<group>"; };
-		91A729A91AB0B58B0031D3F0 /* LyricsParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsParser.m; sourceTree = "<group>"; };
 		91A729AB1AB0C3750031D3F0 /* LyricsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsViewController.h; sourceTree = "<group>"; };
 		91A729AC1AB0C3750031D3F0 /* LyricsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LyricsViewController.m; sourceTree = "<group>"; };
 		91A729AF1AB0CAEC0031D3F0 /* LyricsStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LyricsStepper.h; sourceTree = "<group>"; };
@@ -222,12 +222,12 @@
 		91A729A41AB0B5300031D3F0 /* Data Parser */ = {
 			isa = PBXGroup;
 			children = (
-				91A729A51AB0B57B0031D3F0 /* TrackParser.h */,
-				91A729A61AB0B57B0031D3F0 /* TrackParser.m */,
-				91A729A81AB0B58B0031D3F0 /* LyricsParser.h */,
-				91A729A91AB0B58B0031D3F0 /* LyricsParser.m */,
-				9125499D1AB0FF60004C0167 /* LyricsFilter.h */,
-				9125499E1AB0FF60004C0167 /* LyricsFilter.m */,
+				91013EAC1AB1106600BAE049 /* TrackParser.h */,
+				91013EAD1AB1106600BAE049 /* TrackParser.m */,
+				91013EA61AB1105900BAE049 /* LyricsFilter.h */,
+				91013EA71AB1105900BAE049 /* LyricsFilter.m */,
+				91013EA81AB1105900BAE049 /* LyricsParser.h */,
+				91013EA91AB1105900BAE049 /* LyricsParser.m */,
 			);
 			name = "Data Parser";
 			path = ..;
@@ -343,18 +343,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A7299A1AB0A6710031D3F0 /* LyricsSearchRequest.m in Sources */,
+				91013EAA1AB1105900BAE049 /* LyricsFilter.m in Sources */,
+				91013EAE1AB1106600BAE049 /* TrackParser.m in Sources */,
 				91A729B11AB0CAEC0031D3F0 /* LyricsStepper.m in Sources */,
 				91A729891AB09A5F0031D3F0 /* Lyrics.m in Sources */,
-				91A729A71AB0B57B0031D3F0 /* TrackParser.m in Sources */,
+				91013EAB1AB1105900BAE049 /* LyricsParser.m in Sources */,
 				91A729A31AB0B3C50031D3F0 /* URLFriendlyString.m in Sources */,
 				91A729A01AB0AE000031D3F0 /* RequestMaker.m in Sources */,
 				91A729601AB093AF0031D3F0 /* AppDelegate.m in Sources */,
-				9125499F1AB0FF60004C0167 /* LyricsFilter.m in Sources */,
 				91A729911AB0A0F10031D3F0 /* Track.m in Sources */,
 				91A729971AB0A6610031D3F0 /* TrackSearchRequest.m in Sources */,
 				912549A31AB10734004C0167 /* DeviceHardwareHelper.m in Sources */,
 				91A729821AB097B70031D3F0 /* SearchLyricsViewController.m in Sources */,
-				91A729AA1AB0B58B0031D3F0 /* LyricsParser.m in Sources */,
 				91A729AD1AB0C3750031D3F0 /* LyricsViewController.m in Sources */,
 				91A7295D1AB093AF0031D3F0 /* main.m in Sources */,
 			);
